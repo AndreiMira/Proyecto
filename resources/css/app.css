@@ -1,0 +1,77 @@
+/* Importar Bootstrap localmente desde node_modules */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1, h2 {
+    color: #b1b1b1;
+}
+
+p {
+    color: #555;
+}
+
+.d-flex div {
+    flex: 1 0 30%; /* Ajustado para mantener las imágenes en línea */
+    text-align: center;
+    margin-bottom: 1rem; /* Espacio debajo de cada div para separación */
+}
+
+.img-fluid {
+  width: 100%; /* Mantiene el ancho completo dentro del div */
+  height: 300px; /* Aumenta la altura para evitar recorte excesivo */
+  object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+  border-radius: 8px; /* Bordes redondeados para un aspecto más suave */
+}
+
+
+.portfolio-link {
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-link:hover {
+    background-color: #555;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .d-flex div {
+        flex: 0 0 100%; /* Ajuste para pantalla pequeña, cada div toma el ancho completo */
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
